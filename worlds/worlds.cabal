@@ -1,0 +1,22 @@
+name:                worlds
+version:             0.0
+synopsis:            First-class worlds
+-- description:         
+homepage:            https://github.com/fumieval/worlds
+license:             BSD3
+license-file:        LICENSE
+author:              Fumiaki Kinoshita
+maintainer:          Fumiaki Kinoshita <fumiexcel@gmail.com>
+-- copyright:           
+category:            Control
+build-type:          Simple
+-- extra-source-files:  
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     Control.World
+  -- other-modules:       
+  other-extensions:    GADTs, Rank2Types, ViewPatterns, TypeOperators, KindSignatures, FlexibleInstances, MultiParamTypeClasses, GeneralizedNewtypeDeriving
+  build-depends:       base ==4.*, minioperational >=0.4 && <0.5, containers >=0.4 && <0.7, mtl == 2.*, lens >= 4.0 && < 5, void
+  -- hs-source-dirs:      
+  default-language:    Haskell2010
